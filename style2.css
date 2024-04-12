@@ -1,9 +1,400 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-.navbar{
-    
+
+html {
+    font-size: 62.5%;
+}
+
+.navbar {
+    margin: 1.6rem 0 1.6rem;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+.navbar ul li img {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 2.2rem;
+}
+
+.yum-part1 {
+    color: #f17228;
+}
+
+.yum-part2 {
+    color: #ffb30e;
+}
+
+.deliver-to span {
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+.deliver-to {
+    gap: .8rem;
+}
+
+.deliver-to i,
+.nav-right i {
+    color: #ffb30e;
+}
+
+.nav-right {
+    gap: 0.5rem;
+}
+
+.search-food {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    font-weight: 900;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #ffb30e;
+}
+
+/* plus sign */
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.sign svg path {
+    fill: white;
+}
+
+/* text */
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+
+/* hover effect on button width */
+.login-btn:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+}
+
+.login-btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+
+/* hover effect button's text */
+.login-btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+
+/* button click effect*/
+.login-btn:active {
+    transform: translate(2px, 2px);
+}
+
+.container {
+    position: relative;
+    box-sizing: border-box;
+    width: fit-content;
+}
+
+.mainbox {
+    box-sizing: border-box;
+    position: relative;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border-radius: 160px;
+    background-color: #ffb30e;
+    transition: all 0.3s ease;
+}
+
+.checkbox:focus {
+    border: none;
+    outline: none;
+}
+
+.checkbox:checked {
+    right: 10px;
+}
+
+.checkbox:checked~.mainbox {
+    width: 50px;
+}
+
+.checkbox:checked~.mainbox .search_input {
+    width: 0;
+    height: 0px;
+}
+
+.checkbox:checked~.mainbox .iconContainer {
+    padding-right: 8px;
+}
+
+.checkbox {
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 17px;
+    top: 10px;
+    z-index: 9;
+    cursor: pointer;
+    appearance: none;
+}
+
+.search_input {
+    box-sizing: border-box;
+    height: 100%;
+    width: 170px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    font-size: 1em;
+    color: white;
+    transition: all 0.3s ease;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.search_input::placeholder {
+    color: rgba(255, 255, 255, 0.776);
+}
+
+.iconContainer {
+    box-sizing: border-box;
+    padding-top: 5px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.search_icon {
+    box-sizing: border-box;
+    fill: white;
+    font-size: 1.3em;
+}
+
+/* login page */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(45deg, #f17228, #ffb30e);
+    padding: 30px;
+    width: 450px;
+    margin: auto;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    transition: background 0.3s ease;
+    transform: translateY(-120%);
+    transition: transform 0.5s ease;
+}
+.form-show{
+    transform : translateY(0%) !important;
+}
+
+.form:hover {
+    background: linear-gradient(45deg, darkblue, skyblue);
+    transition: 1s ease-in-out;
+}
+
+::placeholder {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.form button {
+    align-self: flex-end;
+}
+
+.flex-column>label {
+    color: white;
+    font-weight: 600;
+}
+
+.inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10em;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+    background-color: white;
+}
+
+.input {
+    margin-left: 10px;
+    border-radius: 10rem;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.inputForm:focus-within {
+    border: 1.5px solid orange;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.flex-row>div>label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+.span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button-submit {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+    background: transparent;
+    transition: ease-out 0.5s;
+    border: 2px solid;
+    border-radius: 10em;
+    box-shadow: inset 0 0 0 0 blue;
+    margin: 20px 0 10px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-submit:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 royalblue;
+}
+
+.button-submit:active {
+    transform: scale(0.9);
+}
+
+.p {
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+    border: 1px solid orange;
+}
+
+/* Hero Section */
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10rem;
+    z-index: -1;
+    background-color: #fccd25;
+    width: 100%;
+    padding: 0 15rem 0;
+}
+.hero-left h1{
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    top: 23%;
+    left: 33%;
+}
+.hero-left p{
+    color: #867231;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 36%;
+    left : 33%;
 }

@@ -130,7 +130,7 @@ a {
 }
 
 .hero-section img {
-    height: 90%;
+    height: 100%;
     width: 90%;
     border-radius: 75px;
 }
@@ -197,4 +197,87 @@ a {
     margin-left: 500px;
     border-radius: 20px;
     margin-top: -100px;
+}
+.thali img{
+    height: 145px;
+    width: 145px;
+    margin-left: 195px;
+    margin-bottom: 8px;
+}
+.biryani img{
+    height: 210px;
+    width: 210px;
+    margin-top: -190px;
+}
+.catalog p{
+    margin-left: 135px;
+    margin-top: -50px;
+    color: #eb2c17da;
+    font-weight: bold;
+}
+.hero-section2{
+    height: 475px;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line1 {
+    margin-top: -210px;
+    font-size: large;
+    font-weight: bolder;
+    font-style: italic;  
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left: 200px;
+}
+.hero2img img{
+    margin-top: 180px;
+    position: relative;
+    height: 300px;
+    width: 1070px;
+    margin-left: -800px;
+}
+
+.hero-section3{
+    height: 614px;
+    background-color: #FFDDCC;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.questions h1{
+    color: #eb2c17da;
+    margin-top: 50px;
+}
+.hero-section3 img{
+    height: 614px;
+    width: 1250px;
+}
+.foot-panel1{
+    margin-top: 50px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foot-panel1 ul a{
+    display: block;
+}
+.foot-panel1 ul p{
+    font-weight: bold;
+}
+.foot-panel2{
+    background-color:#eb2c17da;
+    height: 80px;
+    color: white;
+    font-size: 0.7rem;
+    text-align:center;
+}
+.pages{
+    padding-top: 25px;
+}
+
+.copyright{
+    padding-top: 5px;    
 }

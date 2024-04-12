@@ -9,6 +9,7 @@
 a {
     text-decoration: none;
 }
+
 .navbar {
     height: 110px;
     background-color: #eb2c17da;
@@ -32,9 +33,9 @@ a {
 }
 
 .nav-logo img {
-    height: 80px;
-    width: 50%;
-    border-radius: 100px;
+    height: 70px;
+    width: 35%;
+    border-radius: 50%;
 }
 
 .nav-items ul {
@@ -185,6 +186,7 @@ a {
     align-items: center;
     justify-content: center;
 }
+
 .hero-boy {
     margin-top: 200px;
     position: relative;

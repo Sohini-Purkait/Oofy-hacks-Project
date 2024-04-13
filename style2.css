@@ -402,7 +402,8 @@ html {
     top: 38%;
     left: 30%;
 }
-.hero-left img{
+
+.hero-left img {
     height: 25rem;
     width: 30rem;
     position: absolute;
@@ -410,6 +411,7 @@ html {
     left: 35%;
     z-index: -1;
 }
+
 .find-food {
     background-color: white;
     border-radius: 10px;
@@ -432,50 +434,70 @@ html {
     align-items: center;
     margin: 10rem 20rem 5rem;
 }
-.card img{
+
+.card img {
     height: 25rem;
     width: 25rem;
     border-radius: 2rem;
     object-fit: cover;
 }
-.card-img{
+
+.card-img {
     position: relative;
     margin-bottom: 1.8rem;
 }
-.discount{
+
+.card-img:hover {
+    cursor: pointer;
+}
+
+.discount {
     position: absolute;
     top: 69%;
     left: 0;
     background-color: #ffb30e;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     gap: .6rem;
     padding: 0.7rem 1rem;
-    border-radius :0 2rem 0 2rem;
+    border-radius: 0 2rem 0 2rem;
     width: 11rem;
 }
-.discount .discount-left h1{
+
+.discount .discount-left h1 {
     font-size: 4rem;
     color: white;
 }
-.discount .discount-right h2{
+
+.discount .discount-right h2 {
     font-size: 1.6rem;
     font-weight: 500;
     color: white;
 }
-.discount .discount-right :first-child{
+
+.discount .discount-right :first-child {
     font-size: 2.5rem;
     font-weight: 900;
 }
-.days-remaining h2{
+
+.days-remaining h2 {
     margin-bottom: .8rem;
 }
-.days-remaining button{
+
+.days-remaining button {
     color: #f17228;
     font-weight: 500;
     background-color: #fce3d4;
     padding: .5rem 1rem;
     border: none;
     border-radius: .8rem;
+}
+.card{
+    border-radius: 2rem;
+    padding: 1rem;
+}
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 1s ease;
 }

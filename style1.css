@@ -12,7 +12,7 @@ a {
 
 .navbar {
     height: 110px;
-    background-color: #eb2c17da;
+    background-color: #df732ada;
     color: white;
     display: flex;
     align-items: center;
@@ -27,9 +27,8 @@ a {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    color: #000;
-    font-style: italic;
-    font-weight: bolder;
+    font-weight: 900;
+    font-size: 22px;
 }
 
 .nav-logo img {
@@ -52,6 +51,13 @@ a {
     color: yellow;
     text-decoration: none;
 
+}
+.yum-part1 {
+    color: #b94d0f;
+}
+
+.yum-part2 {
+    color: #dff51a;
 }
 .button {
     background-color: #fff000;

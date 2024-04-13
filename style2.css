@@ -63,9 +63,10 @@ html {
     gap: 0.5rem;
 }
 
-.search-food {
+.login-food {
     font-size: 2rem;
-    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    margin-right: .5rem;
     font-weight: 900;
     font-family:'Times New Roman', Times, serif ;
 }
@@ -74,8 +75,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -382,19 +383,31 @@ html {
     z-index: -1;
     background-color: #fccd25;
     width: 100%;
-    padding: 0 15rem 0;
 }
 .hero-left h1{
     font-size: 5rem;
     color: white;
     position: absolute;
     top: 23%;
-    left: 33%;
+    left: 30%;
 }
 .hero-left p{
     color: #867231;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     position: absolute;
-    top: 36%;
-    left : 33%;
+    top: 38%;
+    left : 30%;
+}
+.find-food{
+    background-color: white;
+    border-radius: 10px;
+    width: 20vw;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+.find-food span{
+    font-size: 1.6rem;
+    margin-right: .6rem;
 }

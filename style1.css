@@ -6,9 +6,10 @@
 }
 
 /* navbar */
-a {
+.nav-items a {
     text-decoration: none;
 }
+
 
 .navbar {
     height: 110px;
@@ -58,6 +59,10 @@ a {
 
 .yum-part2 {
     color: #dff51a;
+}
+.nav-items a:hover{
+    cursor : pointer;
+    font-size: 20px;
 }
 .button {
     background-color: #fff000;

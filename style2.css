@@ -9,6 +9,30 @@ html {
     font-size: 62.5%;
 }
 
+#homeButton {
+    background-color: #ffb30e;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 1.2rem 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+#homeButton:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: .5s ease;
+    transform: scale(1.1);
+    background-color: rgb(199, 199, 24);
+    color: black;
+}
+
 .navbar {
     padding: 1.6rem 0 1.6rem;
     background-color: #f07f3e;
@@ -36,7 +60,8 @@ html {
     font-weight: 900;
     font-size: 2.2rem;
 }
-.logo-nav span{
+
+.logo-nav span {
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -499,71 +524,82 @@ html {
     border: none;
     border-radius: .8rem;
 }
-.card{
+
+.card {
     border-radius: 2rem;
     padding: 1rem;
 }
+
 .card:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: 1s ease;
 }
 
 /* Section3 */
-.section3{
+.section3 {
     background-color: #fffbf2;
     padding: 7rem 20rem 5rem;
 }
-.boxes{
+
+.boxes {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10rem;
 }
-.boxall{
+
+.boxall {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     line-height: 2rem;
 }
-.section3 h1{
+
+.section3 h1 {
     color: #f17228;
     text-align: center;
     font-size: 3rem;
     margin-bottom: 3rem;
 }
-.boxall img{
+
+.boxall img {
     height: 16rem;
     width: 15rem;
 }
+
 .boxall h2,
-.boxall p{
+.boxall p {
     text-align: center;
 }
-.boxall p{
+
+.boxall p {
     font-size: 1.2rem;
 }
 
 /* Popular Items */
-.all-items{
+.all-items {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 2rem;
 }
-.cards-center{
+
+.cards-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.popular-items>h1{
+
+.popular-items>h1 {
     text-align: center;
     margin-top: 5rem;
     margin-bottom: 4rem;
     font-size: 3rem;
 }
+
 .slider-left button,
-.slider-right button{
+.slider-right button {
     background-color: #caaa3e;
     border-radius: 50%;
     width: 8vh;
@@ -571,44 +607,53 @@ html {
     border: none;
     cursor: pointer;
 }
+
 .slider-left button img,
-.slider-rigth button img{
+.slider-rigth button img {
     padding-top: 1rem;
     padding-right: .5rem;
 }
+
 .slider-left button:hover,
-.slider-right button:hover{
+.slider-right button:hover {
     background-color: #e0b620;
 }
-.carding img{
-    height: 25rem;
-    width: 25rem;
+
+.carding img {
+    height: 22rem;
+    width: 22rem;
     object-fit: cover;
     object-position: center;
     border-radius: 1rem;
 }
-.carding{
+
+.carding {
     padding: 1rem;
     border-radius: 1rem;
 }
-.carding:hover{
+
+.carding:hover {
     box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     transition: .8s ease;
     background-color: rgb(224, 224, 177);
     cursor: pointer;
 }
-.carding p{
+
+.carding p {
     font-size: 1.2rem;
 }
-.carding span{
+
+.carding span {
     font-weight: 700;
     font-size: 1.6rem;
 }
-.foodspan{
+
+.foodspan {
     color: #c7a125;
     font-weight: 500;
 }
-.carding button{
+
+.carding button {
     width: 100%;
     padding: .8rem;
     margin-top: .8rem;
@@ -618,18 +663,20 @@ html {
     border: none;
     font-weight: 600;
 }
-.card-center6{
+
+.card-center6 {
     display: none;
     position: absolute;
     transform: translateX(100vw);
 }
-.show-card-center6{
+
+.show-card-center6 {
     display: block;
     position: relative;
     transform: translateX(0vw);
 }
-.hide-card-center1{
+
+.hide-card-center1 {
     position: absolute;
     transform: translateX(-100vw);
 }
-

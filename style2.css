@@ -406,6 +406,7 @@ html {
 
 /* Hero Section */
 .hero-section {
+    padding-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -681,7 +682,7 @@ html {
     transform: translateX(-100vw);
 }
 
-.foot-panel1{
+.foot-panel1 {
     display: flex;
     justify-content: space-evenly;
     background-color: #212121;
@@ -689,13 +690,17 @@ html {
     padding-bottom: 30px;
     font-size: 1.2rem;
 }
-.foot-panel1 ul a{
+
+.foot-panel1 ul a {
     display: block;
-    color: wheat;    
+    color: wheat;
+    margin-top: 10px;
 }
-.foot-panel1 p{
+
+.foot-panel1 p {
     font-weight: bold;
-    color: white ;
+    color: white;
     font-weight: bolder;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
 }

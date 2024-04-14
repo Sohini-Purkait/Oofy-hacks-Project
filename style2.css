@@ -680,3 +680,22 @@ html {
     position: absolute;
     transform: translateX(-100vw);
 }
+
+.foot-panel1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #212121;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
+.foot-panel1 ul a{
+    display: block;
+    color: wheat;    
+}
+.foot-panel1 p{
+    font-weight: bold;
+    color: white ;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}

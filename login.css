@@ -1,5 +1,6 @@
 body{
-    background-color: #baff1e;
+    background-image: linear-gradient( 135deg, #FAD7A1 10%, #E96D71 100%);
+    height: 100vh;
 }
 .form {
     margin: 10vh auto;
